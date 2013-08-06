@@ -1,0 +1,16 @@
+
+
+<button class="ink-button" {{action 'upVoted' view.downVote}}>
+    {{#if view.downVote}}
+        Downvote
+    {{else}}
+        Upvote
+    {{/if}} this
+    <span class="
+        {{#if view.downVote}}
+            icon-thumbs-down
+        {{else}}
+            icon-thumbs-up
+        {{/if}}
+    "></span>
+</button>

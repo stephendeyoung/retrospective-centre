@@ -1,0 +1,22 @@
+
+<div class="column-group">
+    <div class="large-40 push-center">
+        <h2><strong class="ink-label info">{{group.name}}</strong> {{title}}</h2>
+        <p>{{description}}</p>
+        <ul>
+            <li>
+                Upvotes: {{upVotes}}
+                {{#unless hasVoted}}
+                    {{view App.VoteButtonView}}
+                {{/unless}}
+            </li>
+            <li>
+                Downvotes: {{downVotes}}
+                {{#unless hasVoted}}
+                    {{view App.DownVoteButtonView}}
+                {{/unless}}
+            </li>
+        </ul>
+    </div>
+</div>
+

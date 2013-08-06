@@ -1,0 +1,43 @@
+<div class="column-group">
+    <div class="large-50">
+        <h2>Current Suggestions</h2>
+    </div>
+    <div class="large-50 content-right">
+        <button class="ink-button green" {{action 'createSuggestion'}}>Make a suggestion</button>
+    </div>
+</div>
+
+<table class="ink-table bordered suggestions-table">
+    <thead>
+        <tr>
+            {{#each model}}
+                <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {{#each model}}
+                <td>
+                    <ul>
+                    {{#each suggestions}}
+                        <li class="suggestion">
+                            <h3>
+                                {{#linkTo 'suggestion' this}}{{title}}{{/linkTo}}
+                            </h3>
+                            <ul>
+                                <li>Upvotes: <span class="up-vote">{{upVotes}}</span></li>
+                                <li>Downvotes: <span class="down-vote">{{downVotes}}</span></li>
+                            </ul>
+                        </li>
+                    {{/each}}
+                    </ul>
+                </td>
+            {{/each}}
+        </tr>
+    </tbody>
+</table>
+
+
+
+

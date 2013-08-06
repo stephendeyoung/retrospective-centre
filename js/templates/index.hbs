@@ -1,0 +1,30 @@
+<div class="column-group vertical-space">
+    <div class="large-30 push-center">
+        <h2>Please login&hellip;</h2>
+
+        <form class="ink-form login" {{action 'handleSubmit' on='submit'}}>
+            <div class="control-group">
+                <label for="username">Username</label>
+                <div class="control">
+                    {{view Ember.TextField valueBinding='username' type='text' id='username'}}
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="password">Password</label>
+                <div class="control">
+                    {{view Ember.TextField valueBinding='password' type='password' id='password'}}
+                </div>
+            </div>
+            <div class="control-group">
+                <input type="submit" value="Login" class="ink-button blue">
+            </div>
+        </form>
+
+        {{#if invalidLogin}}
+            <div class="ink-alert basic error">
+                <p class="invalid-login">Sorry you entered an incorrect username or password.</p>
+            </div>
+        {{/if}}
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+node_modules
+libpeerconnection.log
+.bowerrc
+bower.json
+ember.json
+Gruntfile.js
+js/application.js
+js/vendor/*
+!js/vendor/ember-model.js
+test/scripts/current-suggestions.js
+test/karma.conf.js
+test/setup.js

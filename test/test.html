@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.12.0.css">
+        <style>
+            #ember {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="ember"></div>
+        <script src="http://code.jquery.com/qunit/qunit-1.12.0.js"></script>
+        <script src="../js/application.js"></script>
+        <script>
+            App.rootElement = "#ember";
+            App.setupForTesting();
+            App.injectTestHelpers();
+            function exists(selector) {
+                return !!find(selector).length;
+            }
+        </script>
+        <script src="scripts/login.js"></script>
+    </body>
+</html>
