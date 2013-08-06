@@ -3,7 +3,6 @@ libpeerconnection.log
 .bowerrc
 bower.json
 ember.json
-Gruntfile.js
 js/application.js
 js/vendor/*
 !js/vendor/ember-model.js
