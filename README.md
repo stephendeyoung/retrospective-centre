@@ -8,3 +8,7 @@ You will need to have [ember tools](https://github.com/rpflorence/ember-tools) i
 3. Run `node server/index.js`
 4. Visit [http://localhost:8888/](http://localhost:8888/) in your browser
 5. To login the username is `syoung` and the password is `password`
+
+## Running the tests
+
+You will need to have grunt and the node dependencies installed. Then run `grunt qunit` to execute the tests.
